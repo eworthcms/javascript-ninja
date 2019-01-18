@@ -1,0 +1,321 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第3章 函数的定义与参数 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3-1.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    第3章 函数的定义与参数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="3-1.html">
+            
+                <a href="3-1.html">
+            
+                    
+                    3.1 函数式的不同点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="3-2.html">
+            
+                <a href="3-2.html">
+            
+                    
+                    3.2 函数作为对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="3-3.html">
+            
+                <a href="3-3.html">
+            
+                    
+                    3.3 函数定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="3-4.html">
+            
+                <a href="3-4.html">
+            
+                    
+                    3.4 函数的实参和形参
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第3章 函数的定义与参数</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x4E0E;&#x53C2;&#x6570;">&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x4E0E;&#x53C2;&#x6570;</h1>
+<blockquote>
+<p>JavaScript &#x4F5C;&#x4E3A;&#x51FD;&#x6570;&#x5F0F;&#x8BED;&#x8A00;&#x6765;&#x7406;&#x89E3;&#x3002;</p>
+</blockquote>
+<h2 id="&#x5173;&#x952E;&#x6982;&#x5FF5;">&#x5173;&#x952E;&#x6982;&#x5FF5;</h2>
+<p>&#x51FD;&#x6570;&#x662F;&#x7B2C;&#x4E00;&#x7C7B;&#x5BF9;&#x8C61;&#xFF08;&#x4E00;&#x7B49;&#x516C;&#x6C11;&#xFF09;</p>
+<p>&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x770B;&#x4F5C;&#x662F; &#x5176;&#x4ED6;&#x4EFB;&#x610F;&#x7C7B;&#x578B;&#x7684; Javascript &#x5BF9;&#x8C61;</p>
+<p>&#x51FD;&#x6570;&#x548C;&#x5176;&#x4ED6;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E00;&#x6837;&#xFF0C;&#x80FD;&#x88AB;&#x53D8;&#x91CF;&#x5F15;&#x7528;&#xFF0C;&#x4EE5;&#x5B57;&#x9762;&#x91CF;&#x5F62;&#x5F0F;&#x58F0;&#x660E;&#xFF0C;&#x4F5C;&#x4E3A;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x4F20;&#x9012;</p>
+<h2 id="&#x53D1;&#x73B0;">&#x53D1;&#x73B0;</h2>
+<p>:musical_note: &#x5728;&#x9700;&#x8981;&#x8C03;&#x7528;&#x67D0;&#x51FD;&#x6570;&#x7684;&#x4F4D;&#x7F6E; &#x5B9A;&#x4E49;&#x8BE5;&#x51FD;&#x6570;&#xFF0C;&#x80FD;&#x8BA9;&#x4EE3;&#x7801;&#x66F4;&#x7D27;&#x51D1;&#x3001;&#x66F4;&#x6613;&#x61C2;</p>
+<h2 id="&#x672F;&#x8BED;">&#x672F;&#x8BED;</h2>
+<h3 id="&#x4E00;&#x7B49;&#x516C;&#x6C11;">&#x4E00;&#x7B49;&#x516C;&#x6C11;</h3>
+<p>&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x5982;&#x679C;&#x67D0;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x503C;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A; <code>&#x53C2;&#x6570;&#x4F20;&#x9012;</code>&#xFF0C;&#x53EF;&#x4EE5;&#x4ECE; <code>&#x5B50;&#x7A0B;&#x5E8F;&#x4E2D;&#x8FD4;&#x56DE;</code>&#xFF0C;&#x53EF;&#x4EE5; <code>&#x8D4B;&#x503C;&#x7ED9;&#x53D8;&#x91CF;</code>&#xFF0C;&#x5C31;&#x79F0;&#x4E3A;&#x4E00;&#x7B49;&#x516C;&#x6C11;</p>
+<h3 id="&#x4E8C;&#x7B49;&#x516C;&#x6C11;">&#x4E8C;&#x7B49;&#x516C;&#x6C11;</h3>
+<p>&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A; <code>&#x53C2;&#x6570;&#x4F20;&#x9012;</code>&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x80FD;&#x4ECE;&#x5B50;&#x7A0B;&#x5E8F;&#x4E2D;&#x8FD4;&#x56DE;&#xFF0C;&#x4E5F;&#x4E0D;&#x80FD;&#x8D4B;&#x503C;&#x7ED9;&#x53D8;&#x91CF;</p>
+<h3 id="&#x4E09;&#x7B49;&#x516C;&#x6C11;">&#x4E09;&#x7B49;&#x516C;&#x6C11;</h3>
+<p>&#x503C;&#x8FDE;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x90FD;&#x4E0D;&#x884C;(label)</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="3-1.html" class="navigation navigation-next " aria-label="Next page: 3.1 函数式的不同点">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第3章 函数的定义与参数","level":"1.2","depth":1,"next":{"title":"3.1 函数式的不同点","level":"1.2.1","depth":2,"path":"chapter3/3-1.md","ref":"chapter3/3-1.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter3/3.md","mtime":"2019-01-18T06:27:57.927Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-01-18T06:55:15.662Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
