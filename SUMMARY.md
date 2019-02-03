@@ -19,4 +19,7 @@
   * [5.4 使用词法环境跟踪变量的作用域](chapter5/5-4.md)
   * [5.5 理解JavaScript的变量类型](chapter5/5-5.md)
   * [5.6 闭包的工作原理](chapter5/5-6.md)
+* [第6章 生成器与promise](chapter6/6.md)
+  * [6.1 生成器与promise优雅代码](chapter6/6-1.md)
+  * [6.2 生成器详解](chapter6/6-2.md)
 
