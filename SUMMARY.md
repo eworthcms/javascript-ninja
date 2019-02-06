@@ -22,4 +22,11 @@
 * [第6章 生成器与promise](chapter6/6.md)
   * [6.1 生成器与promise优雅代码](chapter6/6-1.md)
   * [6.2 生成器详解](chapter6/6-2.md)
+  * [6.3 使用promise](chapter6/6-3.md)
+  * [6.4 生成器与promise结合](chapter6/6-4.md)
+* [第7章 面向对象与原型](chapter7/7.md)
+  * [7.1 理解原型](chapter7/7-1.md)
+  * [7.2 对象构造器与原型](chapter7/7-2.md)
+  * [7.3 实现继承](chapter7/7-3.md)
+  * [7.4 ES6的class](chapter7/7-4.md)
 
