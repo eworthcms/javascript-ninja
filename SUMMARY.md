@@ -29,4 +29,8 @@
   * [7.2 对象构造器与原型](chapter7/7-2.md)
   * [7.3 实现继承](chapter7/7-3.md)
   * [7.4 ES6的class](chapter7/7-4.md)
+* [第8章 控制对象的访问](chapter8/8.md)
+  * [8.1 使用getter与setter控制属性访问](chapter8/8-1.md)
+  * [8.2 使用代理控制访问](chapter8/8-2.md)
+  * [8.3 小结](chapter8/8-3.md)
 
